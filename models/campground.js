@@ -12,6 +12,11 @@ ImageSchema.virtual("thumbnail").get(function (){
     return this.url.replace("/upload", "/upload/w_200");
 })
 
+ImageSchema.virtual("show").get(function (){
+    return this.url.replace("/upload", "/upload/w_400,h_200,f_auto,q_auto");
+})
+
+
 const opts = {toJSON: {virtuals:true}};
 
 const campgroundSchema = new Schema({
