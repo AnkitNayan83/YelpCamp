@@ -33,3 +33,12 @@ body{
     color: rgb(0, 0, 0);
     text-shadow: none;
 }
+
+@media (max-width: 450px) { 
+    .lead{
+        font-size: 18px;
+    }
+    .btn{
+        
+    }
+}
